@@ -7,7 +7,7 @@
   export let isFavorite
 </script>
 
-<div class="bg-white rounded-md cursor-pointer shadow-sm flex flex-col justify-between">
+<div class="bg-white rounded-[8px] cursor-pointer shadow-xl shadow-black/50 flex flex-col justify-between">
   <a href={`/movie/${movie.id}`}>
     <div class="pb-[10px] box-border flex flex-col">
       <img src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`} alt={movie.title} width="700" height="800" class="rounded-t-md">
