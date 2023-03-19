@@ -1,12 +1,9 @@
 <script>
   import MovieCard from "./MovieCard.svelte";
-  import Search from "./Search.svelte";
   import { mylist } from '../stores/stores'
-  // import Link from "./Link.svelte";
-  // import Pagination from "./Pagination.svelte";
 
   export let popular
-
+  
   function handleFavorite(movie) {
     const isMovieFavorite = $mylist.find(item => item.id === movie.id)
     if (isMovieFavorite) {
@@ -16,7 +13,6 @@
       mylist.update(list => [...list, movie])
     }
   }
-
 </script>
 
 <div class='w-full py-[20px] px-[30px] 2xl:px-0'>
@@ -25,5 +21,4 @@
       <MovieCard {movie} {handleFavorite} isFavorite={$mylist.find(item => item.id === movie.id)} />
     {/each}
   </div>
-  <!-- <Pagination {page} {totalPages} action={fetchMovies} /> -->
 </div>

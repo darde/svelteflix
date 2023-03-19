@@ -5,7 +5,7 @@
   <div class={`w-[calc(100%-64px)] h-full mx-auto box-border xl:max-w-[1278px] flex items-center justify-between sm:flex-row flex-col`}>
     <div>
       <a href="/">
-        <img width="250" src={'images/svelteflix-logo.png'} alt="Svelte Flix Logo"/>
+        <img width="250" src={'/images/svelteflix-logo.png'} alt="Svelte Flix Logo"/>
       </a>
     </div>
     <div class="flex flex-col items-center sm:items-end pt-[10px] sm:mr-[20px] lg:flex-row-reverse lg:w-[70%] lg:items-center">

@@ -1,8 +1,8 @@
 <script>
   import HeartSolid from 'svelte-awesome-icons/HeartSolid.svelte'
   import HeartRegular from 'svelte-awesome-icons/HeartRegular.svelte'
-  
-  export let movie = []
+
+  export let movie
   export let handleFavorite
   export let isFavorite
 </script>
